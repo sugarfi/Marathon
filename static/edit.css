@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#files {
+    position: absolute;
+    left: 0;
+    top: 4vh;
+    height: 96vh;
+    width: 10vw;
+}
+
+#filebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10vw;
+    height: 4vh;
+    z-index: 1;    
+}
+
+.file {
+    font-family: monospace;
+    padding: 10px;
+    color: navy;
+    font-size: 12pt;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+.file:hover {
+    background-color: navy;
+    color: white;
+}
+
+#editor {
+    position: absolute;
+    left: 10vw;
+    top: 4vh;
+    height: 96vh;
+    width: 40vw;
+    font-size: 12pt;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3vh;
+    padding: 0.5vh;
+    width: 100%;
+}
+
+#run {
+    position: relative;
+    left: 50%;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+#open {
+    position: relative;
+    font-family: monospace;
+    font-size: 12pt;
+    left: 10vw;
+}
+
+
+#terminal {
+    position: absolute;
+    top: 4vh;
+    right: 0;
+    height: 96vh;
+    width: 49vw;
+}

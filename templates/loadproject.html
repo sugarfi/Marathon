@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Marathon</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <h1>Load Project</h1>
+        </header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/new">New Project</a>
+            <a href="/load">Load Project</a>
+        </nav>
+        <form method="POST" autocomplete="off">
+            <input type="text" name="name" placeholder="Project Name" required/><br/>
+            <input type="password" name="password" placeholder="Password" required/><br/>
+            <input type="submit" value="Create" />
+        </form>
+    </body>
+</html>

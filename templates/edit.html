@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Marathon</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='xterm.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}"/>
+        <script src="{{ url_for('static', filename='xterm.js') }}"></script>
+        <script src="{{ url_for('static', filename='ace/ace.js') }}"></script>
+        <script src="{{ url_for('static', filename='marathon.js') }}"></script>
+        <script>
+            sessionStorage.setItem('marathonID', '{{ id }}');
+            sessionStorage.setItem('start', '{{ start }}');
+            sessionStorage.setItem('marathonImg', '{{ img }}');
+            sessionStorage.setItem('marathonPassword', '{{ password }}')
+        </script>
+    </head>
+    <body>
+        <div id="filebar">
+            <button id="new">New</button>
+            <button id="save">Save</button>
+        </div>
+        <div id="files">
+        </div>
+        <div id="editor"></div>
+        <div id="top">
+            <button id="run">Run</button>
+            <span id="open">code.sh</span>
+        </div>
+        <div id="terminal"></div>
+    </body>
+</html>
